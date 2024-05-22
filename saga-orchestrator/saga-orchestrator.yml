@@ -15,6 +15,7 @@ spec:
       containers:
       - name: saga-orchestrator
         image: saga-orchestrator:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5003
 ---
